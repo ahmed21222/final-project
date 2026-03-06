@@ -1,0 +1,53 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.TaskSyncProjectManagementApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/navy_blue</item>
+        <item name="colorPrimaryVariant">@color/navy_blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/navy_blue</item>
+        <item name="colorSecondaryVariant">@color/navy_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        
+        <!-- This is the main line for DatePicker -->
+        <item name="android:datePickerDialogTheme">@style/CustomDatePickerDialog</item>
+    </style>
+
+    <!-- Detailed DatePicker Style -->
+    <style name="CustomDatePickerDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:colorAccent">@color/navy_blue</item>
+        <item name="colorAccent">@color/navy_blue</item>
+        <item name="colorPrimary">@color/navy_blue</item>
+        <item name="android:headerBackground">@color/navy_blue</item>
+        <item name="android:dayOfWeekBackground">@color/navy_blue</item>
+        <item name="android:dayOfWeekTextAppearance">@style/WhiteText</item>
+    </style>
+
+    <style name="WhiteText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Calendar Styles -->
+    <style name="CalWeekday">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#94A3B8</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CalCell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_columnWeight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#1E293B</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+</resources>
